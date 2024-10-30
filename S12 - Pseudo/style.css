@@ -1,0 +1,106 @@
+.mainHeading {
+  text-align: center;
+}
+
+.mainHeading h1 {
+  font-size: 35px;
+  display: inline-block;
+}
+
+.mainHeading h1::first-letter {
+  font-size: 3.25rem;
+  color: tomato;
+}
+
+.indexParagraph::first-line {
+  color: blue;
+}
+
+.mainHeading::before {
+  content: "🌎";
+  font-size: 40px;
+}
+
+.mainHeading::after {
+  content: "🌎";
+  font-size: 40px;
+}
+
+.indexOL {
+  list-style-type: none;
+  counter-reset: section;
+}
+
+.indexOL h3 {
+  counter-increment: section;
+  font-weight: bold;
+  font-size: 1.35rem;
+}
+
+.indexOL h3::before {
+  content: counter(section) ". ";
+  font-weight: bold;
+  font-size: 1.35rem;
+}
+
+.indexUL li::marker {
+  content: "🌐";
+}
+
+.indexUL li {
+  font-size: 16.2px;
+}
+
+.indexParagraph::selection {
+  background-color: linen;
+  color: deeppink;
+}
+
+.resourceNav {
+  display: inline-block;
+}
+
+.resourceNav a {
+  font-size: 20px;
+  padding: 9px;
+}
+
+.resourceNav a:link {
+  color: darkseagreen !important;
+}
+
+.resourceNav a:visited {
+  color: deeppink;
+}
+
+.resourceNav a:hover {
+  background-color: lightyellow;
+  color: violet !important;
+  text-decoration: none;
+}
+
+.resourceNav a:active {
+  background-color: lawngreen;
+  color: brown;
+}
+
+.indexParagraph:hover {
+  background-color: whitesmoke;
+}
+
+.anotherPage {
+  width: 725px;
+  height: 725px;
+}
+
+.indexBody {
+  background-color: snow;
+}
+
+.indexIMG:hover {
+  /* filter: invert(100%); */
+  filter: blur(10px);
+  /* filter: drop-shadow(10px 10px 10px black);
+  filter: grayscale(100%);
+  box-shadow: 10px 10px 10px black; */
+}
